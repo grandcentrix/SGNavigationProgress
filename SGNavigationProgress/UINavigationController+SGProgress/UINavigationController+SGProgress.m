@@ -206,7 +206,7 @@ CGFloat const SGProgressBarHeight = 2.5;
 	} completion:^(BOOL finished) {
 		[UIView animateWithDuration:0.5 animations:^{
 			progressView.alpha = 0;
-		} completion:^(BOOL finished) {
+		} completion:^(BOOL _finished) {
 			[progressView removeFromSuperview];
 			[self removeSGMask];
 			[self resetTitle];
@@ -270,7 +270,7 @@ CGFloat const SGProgressBarHeight = 2.5;
 		{
 			[UIView animateWithDuration:0.5 animations:^{
 				progressView.alpha = 0;
-			} completion:^(BOOL finished) {
+			} completion:^(BOOL _finished) {
 				[progressView removeFromSuperview];
 				[self removeSGMask];
 				[self resetTitle];
